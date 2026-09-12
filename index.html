@@ -1,221 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspirants - Study Platform</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: #f5f7fb;
-            color: #222;
-        }
-
-        header {
-            background: #172554;
-            color: white;
-            padding: 18px 25px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 30px;
-        }
-
-        header p {
-            margin-top: 6px;
-            color: #dbeafe;
-        }
-
-        nav {
-            background: white;
-            padding: 12px;
-            text-align: center;
-            box-shadow: 0 2px 8px #ddd;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #172554;
-            margin: 0 12px;
-            font-weight: bold;
-        }
-
-        .hero {
-            padding: 55px 20px;
-            text-align: center;
-            background: #dbeafe;
-        }
-
-        .hero h2 {
-            font-size: 36px;
-            color: #172554;
-            margin-bottom: 12px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #172554;
-            color: white;
-            padding: 13px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        section h2 {
-            text-align: center;
-            color: #172554;
-            margin-bottom: 25px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 3px 12px #ddd;
-        }
-
-        .card h3 {
-            color: #172554;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            line-height: 1.5;
-            color: #555;
-        }
-
-        footer {
-            background: #172554;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASPIRANTS - Free study resources, notes, practice questions and preparation guidance for students.">
+  <meta name="keywords" content="Aspirants, study, JEE, NEET, notes, practice questions, mathematics, physics, chemistry">
+  <meta name="theme-color" content="#172554">
+  <title>ASPIRANTS | Study. Practice. Succeed.</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>🎓 ASPIRANTS</h1>
-        <p>Your Journey. Your Preparation. Your Success.</p>
-    </header>
-
-    <nav>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#home">🎓 <span>ASPIRANTS</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#subjects">Subjects</a>
         <a href="#resources">Resources</a>
         <a href="#about">About</a>
+      </div>
     </nav>
+  </header>
 
-    <div class="hero" id="home">
-        <h2>Study. Practice. Succeed.</h2>
-        <p>एक बेहतर भविष्य के लिए आज से तैयारी शुरू करें।</p>
-        <a href="#subjects" class="button">Start Learning</a>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">FREE • SIMPLE • STUDENT FOCUSED</span>
+          <h1>Study smarter.<br><span>Achieve more.</span></h1>
+          <p>एक बेहतर भविष्य के लिए आज से तैयारी शुरू करें। Learn concepts, practice questions and build confidence every day.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#subjects">Start Learning →</a>
+            <a class="btn secondary" href="#resources">Explore Resources</a>
+          </div>
+          <div class="stats">
+            <div><strong>3+</strong><span>Core Subjects</span></div>
+            <div><strong>100%</strong><span>Student Focused</span></div>
+            <div><strong>Free</strong><span>Learning Access</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="orb">📚</div>
+          <h3>Your preparation starts here.</h3>
+          <p>Learn • Practice • Revise • Succeed</p>
+          <div class="progress"><span></span></div>
+          <small>Consistency is your superpower.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">LEARN BY SUBJECT</span>
+          <h2>Build your foundation</h2>
+          <p>Important concepts, formulas and practice for your preparation.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="icon math">📐</div>
+            <h3>Mathematics</h3>
+            <p>Important concepts, formulas and practice questions.</p>
+            <a href="#resources">Explore →</a>
+          </article>
+          <article class="card">
+            <div class="icon physics">⚛️</div>
+            <h3>Physics</h3>
+            <p>Understand concepts with clear explanations and examples.</p>
+            <a href="#resources">Explore →</a>
+          </article>
+          <article class="card">
+            <div class="icon chemistry">🧪</div>
+            <h3>Chemistry</h3>
+            <p>Revise reactions, concepts and important questions.</p>
+            <a href="#resources">Explore →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section resources">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">STUDY RESOURCES</span>
+          <h2>Everything in one place</h2>
+        </div>
+        <div class="resource-grid">
+          <div class="resource"><span>📝</span><div><h3>Practice Questions</h3><p>Improve accuracy with regular practice.</p></div></div>
+          <div class="resource"><span>📖</span><div><h3>Notes & Concepts</h3><p>Quick revision material for important topics.</p></div></div>
+          <div class="resource"><span>🎯</span><div><h3>Exam Preparation</h3><p>Prepare with a focused and consistent strategy.</p></div></div>
+          <div class="resource"><span>💡</span><div><h3>Tips & Strategies</h3><p>Study techniques to make preparation easier.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-box">
+        <div>
+          <span class="eyebrow">ABOUT ASPIRANTS</span>
+          <h2>Your journey. Your preparation. Your success.</h2>
+          <p>ASPIRANTS is a student-focused learning website designed to make preparation simple, organised and accessible. Start with the basics, practice regularly and keep improving.</p>
+        </div>
+        <div class="quote">“Small progress every day leads to big results.”</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div><strong>🎓 ASPIRANTS</strong><p>Study. Practice. Succeed.</p></div>
+      <div class="footer-links"><a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#about">About</a></div>
     </div>
+    <div class="copyright">© 2026 ASPIRANTS. Made for students.</div>
+  </footer>
 
-    <section id="subjects">
-        <h2>📚 Subjects</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>📐 Mathematics</h3>
-                <p>Important concepts, formulas और practice questions.</p>
-            </div>
-
-            <div class="card">
-                <h3>⚛️ Physics</h3>
-                <p>Concepts, numerical problems और exam preparation.</p>
-            </div>
-
-            <div class="card">
-                <h3>🧪 Chemistry</h3>
-                <p>Notes, important topics और practice questions.</p>
-            </div>
-
-            <div class="card">
-                <h3>🌱 Biology</h3>
-                <p>Important chapters और आसान तरीके से revision.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="resources">
-        <h2>📝 Study Resources</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>📖 Notes</h3>
-                <p>Chapter-wise notes और study material.</p>
-            </div>
-
-            <div class="card">
-                <h3>❓ Questions</h3>
-                <p>Practice questions और previous year questions.</p>
-            </div>
-
-            <div class="card">
-                <h3>⏱️ Study Plan</h3>
-                <p>Daily study routine और preparation strategy.</p>
-            </div>
-
-            <div class="card">
-                <h3>🏆 Mock Tests</h3>
-                <p>अपनी preparation को test करें और improve करें.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>🎯 About Aspirants</h2>
-        <div class="card">
-            <p>
-                Aspirants एक educational platform है जहाँ students
-                अपनी पढ़ाई, practice और competitive exam preparation
-                को बेहतर बना सकते हैं।
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Aspirants</p>
-        <p>Study Hard • Stay Focused • Achieve Your Goal 🚀</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
-      </html>
+</html>
