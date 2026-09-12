@@ -3,118 +3,424 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="ASPIRANTS - Free study resources, notes, practice questions and preparation guidance for students.">
   <meta name="keywords" content="Aspirants, study, JEE, NEET, notes, practice questions, mathematics, physics, chemistry">
-  <meta name="theme-color" content="#172554">
+  <meta name="theme-color" content="#0f172a">
+
   <title>ASPIRANTS | Study. Practice. Succeed.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ================= NAVBAR ================= -->
   <header class="header">
     <nav class="nav container">
-      <a class="logo" href="#home">🎓 <span>ASPIRANTS</span></a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">A</span>
+        <span>ASPIRANTS</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
       <div class="nav-links">
-        <a href="#home">Home</a>
+        <a href="#home" class="active">Home</a>
         <a href="#subjects">Subjects</a>
         <a href="#resources">Resources</a>
         <a href="#about">About</a>
       </div>
+
+      <button class="theme-btn" aria-label="Toggle theme">
+        ☀️
+      </button>
+
     </nav>
   </header>
 
+
   <main>
+
+    <!-- ================= HERO ================= -->
     <section id="home" class="hero">
+
+      <div class="hero-bg"></div>
+
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="badge">FREE • SIMPLE • STUDENT FOCUSED</span>
-          <h1>Study smarter.<br><span>Achieve more.</span></h1>
-          <p>एक बेहतर भविष्य के लिए आज से तैयारी शुरू करें। Learn concepts, practice questions and build confidence every day.</p>
+
+        <div class="hero-copy reveal">
+
+          <div class="badge">
+            <span class="pulse"></span>
+            FREE • SIMPLE • STUDENT FOCUSED
+          </div>
+
+          <h1>
+            Study smarter.
+            <span>Achieve more.</span>
+          </h1>
+
+          <p>
+            एक बेहतर भविष्य के लिए आज से तैयारी शुरू करें।
+            Learn concepts, practice questions and build confidence every day.
+          </p>
+
           <div class="hero-buttons">
-            <a class="btn primary" href="#subjects">Start Learning →</a>
-            <a class="btn secondary" href="#resources">Explore Resources</a>
+
+            <a class="btn primary" href="#subjects">
+              Start Learning
+              <span>→</span>
+            </a>
+
+            <a class="btn secondary" href="#resources">
+              Explore Resources
+            </a>
+
           </div>
+
           <div class="stats">
-            <div><strong>3+</strong><span>Core Subjects</span></div>
-            <div><strong>100%</strong><span>Student Focused</span></div>
-            <div><strong>Free</strong><span>Learning Access</span></div>
+
+            <div class="stat">
+              <strong data-count="3">3+</strong>
+              <span>Core Subjects</span>
+            </div>
+
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Student Focused</span>
+            </div>
+
+            <div class="stat">
+              <strong>Free</strong>
+              <span>Learning Access</span>
+            </div>
+
           </div>
+
         </div>
-        <div class="hero-card">
-          <div class="orb">📚</div>
+
+
+        <!-- Hero Card -->
+        <div class="hero-card reveal">
+
+          <div class="hero-card-top">
+            <span class="mini-label">YOUR STUDY JOURNEY</span>
+            <span class="card-dot"></span>
+          </div>
+
+          <div class="book-icon">
+            📚
+          </div>
+
           <h3>Your preparation starts here.</h3>
-          <p>Learn • Practice • Revise • Succeed</p>
-          <div class="progress"><span></span></div>
-          <small>Consistency is your superpower.</small>
+
+          <p>
+            Learn • Practice • Revise • Succeed
+          </p>
+
+          <div class="progress-info">
+            <span>Preparation</span>
+            <strong>72%</strong>
+          </div>
+
+          <div class="progress">
+            <span></span>
+          </div>
+
+          <small>
+            ✦ Consistency is your superpower.
+          </small>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- ================= SUBJECTS ================= -->
     <section id="subjects" class="section">
+
       <div class="container">
-        <div class="section-heading">
+
+        <div class="section-heading reveal">
+
           <span class="eyebrow">LEARN BY SUBJECT</span>
-          <h2>Build your foundation</h2>
-          <p>Important concepts, formulas and practice for your preparation.</p>
+
+          <h2>
+            Build your <span>foundation.</span>
+          </h2>
+
+          <p>
+            Important concepts, formulas and practice for your preparation.
+          </p>
+
         </div>
+
+
         <div class="cards">
-          <article class="card">
-            <div class="icon math">📐</div>
+
+          <!-- Mathematics -->
+          <article class="card reveal">
+
+            <div class="icon math">
+              📐
+            </div>
+
+            <div class="card-number">01</div>
+
             <h3>Mathematics</h3>
-            <p>Important concepts, formulas and practice questions.</p>
-            <a href="#resources">Explore →</a>
+
+            <p>
+              Important concepts, formulas and practice questions.
+            </p>
+
+            <a href="#resources">
+              Explore Mathematics
+              <span>→</span>
+            </a>
+
           </article>
-          <article class="card">
-            <div class="icon physics">⚛️</div>
+
+
+          <!-- Physics -->
+          <article class="card reveal">
+
+            <div class="icon physics">
+              ⚛️
+            </div>
+
+            <div class="card-number">02</div>
+
             <h3>Physics</h3>
-            <p>Understand concepts with clear explanations and examples.</p>
-            <a href="#resources">Explore →</a>
+
+            <p>
+              Understand concepts with clear explanations and examples.
+            </p>
+
+            <a href="#resources">
+              Explore Physics
+              <span>→</span>
+            </a>
+
           </article>
-          <article class="card">
-            <div class="icon chemistry">🧪</div>
+
+
+          <!-- Chemistry -->
+          <article class="card reveal">
+
+            <div class="icon chemistry">
+              🧪
+            </div>
+
+            <div class="card-number">03</div>
+
             <h3>Chemistry</h3>
-            <p>Revise reactions, concepts and important questions.</p>
-            <a href="#resources">Explore →</a>
+
+            <p>
+              Revise reactions, concepts and important questions.
+            </p>
+
+            <a href="#resources">
+              Explore Chemistry
+              <span>→</span>
+            </a>
+
           </article>
+
         </div>
+
       </div>
     </section>
 
+
+    <!-- ================= RESOURCES ================= -->
     <section id="resources" class="section resources">
+
       <div class="container">
-        <div class="section-heading">
+
+        <div class="section-heading reveal">
+
           <span class="eyebrow">STUDY RESOURCES</span>
-          <h2>Everything in one place</h2>
+
+          <h2>
+            Everything in <span>one place.</span>
+          </h2>
+
+          <p>
+            Make your preparation organised, focused and consistent.
+          </p>
+
         </div>
+
+
         <div class="resource-grid">
-          <div class="resource"><span>📝</span><div><h3>Practice Questions</h3><p>Improve accuracy with regular practice.</p></div></div>
-          <div class="resource"><span>📖</span><div><h3>Notes & Concepts</h3><p>Quick revision material for important topics.</p></div></div>
-          <div class="resource"><span>🎯</span><div><h3>Exam Preparation</h3><p>Prepare with a focused and consistent strategy.</p></div></div>
-          <div class="resource"><span>💡</span><div><h3>Tips & Strategies</h3><p>Study techniques to make preparation easier.</p></div></div>
+
+          <div class="resource reveal">
+            <div class="resource-icon">📝</div>
+
+            <div>
+              <h3>Practice Questions</h3>
+              <p>Improve accuracy with regular practice.</p>
+            </div>
+
+            <span class="resource-arrow">→</span>
+          </div>
+
+
+          <div class="resource reveal">
+            <div class="resource-icon">📖</div>
+
+            <div>
+              <h3>Notes & Concepts</h3>
+              <p>Quick revision material for important topics.</p>
+            </div>
+
+            <span class="resource-arrow">→</span>
+          </div>
+
+
+          <div class="resource reveal">
+            <div class="resource-icon">🎯</div>
+
+            <div>
+              <h3>Exam Preparation</h3>
+              <p>Prepare with a focused and consistent strategy.</p>
+            </div>
+
+            <span class="resource-arrow">→</span>
+          </div>
+
+
+          <div class="resource reveal">
+            <div class="resource-icon">💡</div>
+
+            <div>
+              <h3>Tips & Strategies</h3>
+              <p>Study techniques to make preparation easier.</p>
+            </div>
+
+            <span class="resource-arrow">→</span>
+          </div>
+
         </div>
+
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container about-box">
+
+    <!-- ================= MOTIVATION ================= -->
+    <section class="motivation">
+
+      <div class="container motivation-box reveal">
+
         <div>
-          <span class="eyebrow">ABOUT ASPIRANTS</span>
-          <h2>Your journey. Your preparation. Your success.</h2>
-          <p>ASPIRANTS is a student-focused learning website designed to make preparation simple, organised and accessible. Start with the basics, practice regularly and keep improving.</p>
+          <span class="eyebrow">KEEP GOING</span>
+
+          <h2>
+            Your goals are bigger<br>
+            than your excuses.
+          </h2>
+
+          <p>
+            Learn every day. Practice consistently. Keep improving.
+          </p>
         </div>
-        <div class="quote">“Small progress every day leads to big results.”</div>
+
+        <div class="motivation-icon">
+          🎯
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section about">
+
+      <div class="container about-box reveal">
+
+        <div>
+
+          <span class="eyebrow">
+            ABOUT ASPIRANTS
+          </span>
+
+          <h2>
+            Your journey. Your preparation. Your success.
+          </h2>
+
+          <p>
+            ASPIRANTS is a student-focused learning website designed
+            to make preparation simple, organised and accessible.
+            Start with the basics, practice regularly and keep improving.
+          </p>
+
+        </div>
+
+        <div class="quote">
+          <span>“</span>
+          Small progress every day leads to big results.
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
+
+  <!-- ================= FOOTER ================= -->
   <footer>
+
     <div class="container footer-content">
-      <div><strong>🎓 ASPIRANTS</strong><p>Study. Practice. Succeed.</p></div>
-      <div class="footer-links"><a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#about">About</a></div>
+
+      <div class="footer-brand">
+
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon">A</span>
+          <span>ASPIRANTS</span>
+        </a>
+
+        <p>
+          Study. Practice. Succeed.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+
+      </div>
+
     </div>
-    <div class="copyright">© 2026 ASPIRANTS. Made for students.</div>
+
+
+    <div class="copyright">
+      © 2026 ASPIRANTS. Made for students.
+    </div>
+
   </footer>
 
+
+  <button class="back-top" aria-label="Back to top">
+    ↑
+  </button>
+
   <script src="script.js"></script>
+
 </body>
-</html>
+  </html>
